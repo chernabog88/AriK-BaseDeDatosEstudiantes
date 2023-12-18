@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base De Datos</title>
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
+<body>
+
+    <h1>Base de Datos</h1>
+
+    <main class="flex">
+
+        <form>
+            <p>Nombre</p>
+            <input id="name" type="text" value="Bob">
+            <p>Apellido Paterno</p>
+            <input id="lName" type="text" value="Esponja">
+            <p>Apellido Materno</p>
+            <input id="sLName" type="text" value="Calamardo">
+            <p>Edad</p>
+            <input id="age" type="number" value="15">
+            <button type="button" onclick="addStudent()">Agregar alumno</button>
+        </form>
+        <div class="padding form-style">
+            <form>
+                <p>Alumno</p>
+                <select onchange="selectStudent()" name="students" id="studentsDropDown"></select>
+                <!-- <button type="button" onclick="selectStudent()">Seleccionar</button> -->
+            </form>
+            <form>
+                <p>Materia</p>
+                <select name="subjects" id="subjectsDropDown">
+                    <option value="Mate">Matematicas</option>
+                    <option value="Eng">Ingles</option>
+                    <option value="Geo">Geografia</option>
+                    <option value="Lite">Literatura</option>
+                </select>
+                <button type="button" onclick="assignSubject()">Asignar</button>
+            </form>
+            <form>
+                <p>Calificacion</p>
+                <input id="gradeInput" type="number">
+                <button type="button" onclick="assignGrade()">Asignar</button>
+            </form>
+        </div>
+    </main>
+    <div class="flex div-no-bg">
+        <p id="error-msg"></p>
+        <button type="button" onclick="clearError()">X</button>
+
+    </div>
+
+    <hr>
+    <div class="info form-style gap">
+        <div class="padding">
+            <div class="flex">
+                <p>Alumno:</p>
+                <P id="info-name" class="info-answer">Nombre de Alumno</P>
+            </div>
+            <div class="flex">
+                <p>ID:</p>
+                <P id="info-ID" class="info-answer">0</P>
+            </div>
+            <div class="flex">
+                <p>Edad:</p>
+                <p id="info-age" class="info-answer">0</p>
+            </div>
+        </div>
+
+        <div class="padding">
+            <p>Clases</p>
+            <hr>
+            <div class="flex">
+                <p>Matemáticas:</p>
+                <p id="info-mat" class="info-answer">N/A</p>
+            </div>
+            <div class="flex">
+                <p>Inglés:</p>
+                <p id="info-eng" class="info-answer">N/A</p>
+            </div>
+            <div class="flex">
+                <p>Geografía:</p>
+                <p id="info-geo" class="info-answer">N/A</p>
+            </div>
+            <div class="flex">
+                <p>Literatura:</p>
+                <p id="info-lit" class="info-answer">N/A</p>
+            </div>
+            <hr>
+            <div class="flex">
+                <p>Promedio:</p>
+                <p id="info-average" class="info-answer">N/A</p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="main-style bg" name="order-select" id="order-select">
+        <button type="button" onclick="orderA()">&#8593;</button>
+        <button type="button" onclick="orderD()">&#8595;</button>
+    </div>
+    <div class="size-med form-style">
+        <div class="padding flex-vert">
+            <p>Grupo Matemáticas</p>
+            <div class="flex">
+                <p>Promedio:</p>
+                <p id="mat-avg" class="info-answer">0</p>
+            </div>
+            <hr>
+            <div id="mat-div" class="flex-vert"></div>
+        </div>
+        <div class="padding">
+            <p>Grupo Inglés</p>
+            <div class="flex">
+                <p>Promedio:</p>
+                <p id="eng-avg" class="info-answer">0</p>
+            </div>
+            <hr>
+            <div id="eng-div" class="flex-vert"></div>
+        </div>
+        <div class="padding">
+            <p>Grupo Geografía</p>
+            <div class="flex">
+                <p>Promedio:</p>
+                <p id="geo-avg" class="info-answer">0</p>
+            </div>
+            <hr>
+            <div id="geo-div" class="flex-vert"></div>
+        </div>
+        <div class="padding">
+            <p>Grupo Literatura</p>
+            <div class="flex">
+                <p>Promedio:</p>
+                <p id="lit-avg" class="info-answer">0</p>
+            </div>
+            <hr>
+            <div id="lit-div" class="flex-vert"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
