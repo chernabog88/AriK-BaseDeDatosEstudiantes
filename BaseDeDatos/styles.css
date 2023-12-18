@@ -1,0 +1,150 @@
+* {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(131, 174, 210);
+}
+
+.bg{
+    background-color: rgb(131, 174, 210);
+}
+
+main {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.main-style {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(169, 169, 255);
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    border: solid 1px rgb(49, 49, 106);
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 15px;
+    background-color: rgb(169, 169, 255);
+    box-shadow: 2px 2px 6px;
+}
+
+.form-style {
+    margin: auto;
+    border: solid 1px rgb(49, 49, 106);
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 15px;
+    background-color: rgb(169, 169, 255);
+    box-shadow: 2px 2px 6px;
+}
+
+.size-med {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+
+}
+
+input {
+    background-color: rgb(103, 103, 177);
+    border-radius: 5px;
+    color: white;
+}
+
+button {
+    background-color: rgb(139, 180, 151);
+    max-width: 50%;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+select {
+    background-color: rgb(103, 103, 177);
+    border-radius: 5px;
+    color: white;
+}
+
+option {
+    background-color: rgb(103, 103, 177);
+    border-radius: 5px;
+    color: white;
+}
+
+hr {
+    border: solid 1px rgb(31, 44, 99);
+    width: 100%;
+}
+
+div {
+    background-color: rgb(169, 169, 255);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-vert {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.info {
+    margin: auto;
+    padding: 1rem;
+    width: 600px;
+}
+
+.info-answer {
+    color: rgb(143, 1, 122);
+    margin-left: 0.5rem;
+}
+
+.padding {
+    padding: 1rem;
+    border-radius: 15px;
+    border: solid 1px rgb(49, 49, 106);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.2rem;
+}
+
+#error-msg {
+    color: rgb(115, 26, 26);
+    margin: auto;
+    width: 200px;
+    text-align: right;
+    text-justify: auto;
+    background-color: rgb(131, 174, 210);
+}
+
+.div-no-bg {
+    background-color: rgb(131, 174, 210);
+}
+
+li {
+    background-color: rgb(169, 169, 255);
+    font-size: small;
+}
